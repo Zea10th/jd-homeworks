@@ -20,7 +20,7 @@ Maven:
 <dependency>
    <groupId>org.junit.jupiter</groupId>
    <artifactId>junit-jupiter-engine</artifactId>
-   <version>5.1.0</version>
+   <version>5.7.2</version>
    <scope>test</scope>
 </dependency>
 ```
@@ -29,13 +29,15 @@ Maven:
 ```gradle
 dependencies {
   // .. другие зависимости
-  testImplementation('org.junit.jupiter:junit-jupiter:5.6.2')
+  testImplementation('org.junit.jupiter:junit-jupiter:5.7.2')
 }
 
 test {
   useJUnitPlatform()
 }
 ```
+
+> Подумайте какие зависимости необходимы, если вам захочется использовать параметризованные тесты
 
 Создайте класс для тестов в папке `src/test/java` (можете также создать подпапки в соответствии с package'ом класса, который вы будете тестировать)  
 
